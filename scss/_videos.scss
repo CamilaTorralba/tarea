@@ -1,0 +1,11 @@
+/* Seccion Videos */
+
+.rotacionTitulo{            
+     text-align: center;
+    margin-top: 1em;
+    
+}
+.rotacionTitulo:hover{
+    transform: rotateX(360deg);
+    transition: all 2s;
+}

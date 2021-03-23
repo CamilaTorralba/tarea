@@ -1,0 +1,14 @@
+/* Seccion Bio */
+.letraBio {
+    color: $colorsecundario;
+    @media (min-width: 320px) {
+        font-size: 0.7em;                        
+                   }
+    @include telefono {
+        font-size: 1em;
+    }
+}
+.texto__biografia{
+
+    padding: 0.5em;
+}

@@ -1,0 +1,39 @@
+/* Seccion noticias */
+.delimitador{    
+    margin:auto;
+    @media (min-width: 320px) {
+        width: 300px;
+        margin: auto;
+    }
+    @include telefono{
+        width: 400px;
+    } 
+    @include tablet {        
+        width: 600px;        
+    }
+    @include desktop{
+    @include grid(2, $separacion / 2);
+    width: 1200px;
+    grid-template-rows: 40% , 50%;
+    }      
+}
+
+    
+.noticiasFaker{    
+ height:0px;
+width:100%;
+max-width:600px; 
+padding-top:56.25%; 
+position:relative;
+margin: 1em;
+}
+
+ iframe {
+position:absolute;
+height:100%;
+width:100%;
+top:0em;
+left:0rem;
+}
+
+

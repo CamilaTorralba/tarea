@@ -1,0 +1,83 @@
+  /* Seccion contactos */
+   .contacto {
+   @media (min-width: 320px) {
+    color: #4f4f4f;   
+    display: flex;
+    flex-direction: column; 
+    margin: 0;
+    @include telefono {
+        max-width: 600px;
+        margin: auto;
+        padding: 2em;
+    }
+   
+}
+ 
+    legend {
+        font-size: 2rem;
+        color: #4f4f4f;
+    }
+
+    label {
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        padding-right: 2em;
+    }
+    input,
+    textarea,
+    select {
+        padding: 1em;
+        display: flex;
+        width: 95%;
+        background-color: #e1e1e1;
+        margin-bottom: 1em;
+        border: none;
+        border-radius: 1em;
+    }
+    select {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    textarea {
+        height: 150px;
+    }
+    .terminos {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .botones {
+        color: #ffffff;
+        background-color: $colorsecundario;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 1em 1em;
+        display: inline-block;
+        text-align: center;
+        border: none;
+        display: block;  
+        cursor:grabbing;                    
+    }
+    .botones:hover {   
+        border-radius: 10em;
+    }
+    .botonRojo{
+        background-color: $colorprimario;
+        
+    }
+}
+.imagen-contacto {
+    background-image: url(../img/Faker-jersey.jpg);
+    padding: $separacion 0;
+    background-position: 50% 60%;    
+    width: 100%;
+    @media (min-width: 320px) {       
+        background-position: 26% 60%;        
+    }
+    .contenido-contacto {
+       text-align: center;
+    }    
+
+}

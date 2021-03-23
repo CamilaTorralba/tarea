@@ -1,0 +1,118 @@
+html {
+    font-size: 20px;
+    box-sizing: border-box;
+ }
+ * {
+    margin:  0;
+    padding: 0;
+  }
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5em;   
+   
+    
+}
+
+.header{
+    background-color: $colorsecundario;
+     height: 80px ;
+    text-align: center;
+     
+       
+    &__index {
+        background-color: $colorsecundario;
+        text-align: center;        
+    } 
+    &__logo {
+    display: flex;
+    justify-content: center;        
+}
+
+}
+h1 {
+    color: $colorprimario;
+    padding-left: 0.3em;
+    
+        
+ }
+h2 {
+    color: $colorprimario;
+} 
+
+/* Navegacion */
+
+.navegacion {
+    color: $colorprimario;    
+       
+}
+.superior {
+    text-align-last: justify;
+  
+}
+.navegacion a {
+    color: rgb(48, 45, 45);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;     
+         
+}
+.navegacion a:hover{
+    animation-duration: 2s;
+   animation-name: aparecer;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-delay: 0s;
+   
+}
+@keyframes aparecer {
+    0%{        
+      opacity: 0.5;
+    }
+    70% {
+        color: $colorprimario;    
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
+
+.inferior a {
+    color: $colorprimario;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 1em;
+    position: relative;
+    top: 1.5em;
+    @media (max-width: 768px) {
+    display: flex;
+    top: 0;
+    font-size: 0.8em;
+      }
+}
+
+    /* Tabla */
+.seccionCompleta {
+   padding: 1.5em;
+}
+
+/* Footer */
+.footer__copyright {
+    color: $colorprimario;
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.8em;
+   
+}
+
+.footer__inferior {    
+    @include footerMixin($colorsecundario, 0.1em)
+    
+}
+
+.footer__dos{    
+    @include footerMixin($colorsecundario, 0.5em)
+}
+
+
